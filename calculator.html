@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator App</title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<script type="text/javascript" src="./script.js"></script>
+</head>
+<body>
+	<div class="container">
+		<h2>Calculator</h2>
+		<div class="box-body">
+			<input id="number1" type="text" name="input1">
+			<input onclick="document.getElementById('number1').disabled=this.checked;" id="check1" type="checkbox" name="checkbox1">
+		</div>
+		<div class="box-body">
+			<input id="number2" type="text" name="input2">
+			<input onclick="document.getElementById('number2').disabled=this.checked;" id="check2" type="checkbox" name="checkbox2">
+		</div>
+		<div class="box-body">
+			<input id="number3" type="text" name="input3">
+			<input onclick="document.getElementById('number3').disabled=this.checked;" id="check3" type="checkbox" name="checkbox3">
+		</div>
+		<div class="main-btn">
+			<button onclick="plus()">+</button>
+			<button onclick="minus()">-</button>
+			<button onclick="multiply()">×</button>
+			<button onclick="divide()">÷</button>
+			<button onclick="clean()">C</button>
+		</div>
+	</div>
+</body>
+</html>
